@@ -1,0 +1,7 @@
+---
+- id: vale
+  name: Lint natural language texts with Vale
+  description: Lint natural language texts with Vale
+  entry: vale
+  language: system
+  types: [text]

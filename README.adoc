@@ -1,12 +1,17 @@
 = pre-commit-hooks-with-vale
 :author: hituzi no sippo
-:revnumber: v0.3.0
-:revdate: 2022-07-23T12:06:32+09:00
-:revremark: Add overview
+:revnumber: v0.4.0
+:revdate: 2022-07-23T12:07:48+09:00
+:revremark: Add usage
 :description: README for {doctitle}
 :copyright: Copyright (C) 2022 {author}
 // Custom Attributes
 :creation_date: 2022-07-23T11:48:24+09:00
+:github_url: https://github.com
+:owner_name: hituzi-no-sippo
+:repository_name: {doctitle}
+:repository: {owner_name}/{repository_name}
+:repository_url: {github_url}/{repository}
 :pre_commit_url: https://pre-commit.com
 
 :vale_url: https://vale.sh/
@@ -21,6 +26,17 @@ install Vale^] manually. +
 Because hook laguage is link:{pre_commit_url}#system[system^].
 It is not link:{pre_commit_url}#golang[golang^].
 ====
+
+== Usage
+
+.pre-commit-config.yaml
+[source, YAML, subs='+attributes']
+----
+- repo: {repository_url}
+  rev: v1.0.0
+  hooks:
+    id: vale
+----
 
 '''
 
