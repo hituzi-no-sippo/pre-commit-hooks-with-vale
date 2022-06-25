@@ -1,14 +1,26 @@
 = pre-commit-hooks-with-vale
 :author: hituzi no sippo
-:revnumber: v0.2.0
-:revdate: 2022-07-23T11:49:16+09:00
-:revremark: Add MIT-0 license
+:revnumber: v0.3.0
+:revdate: 2022-07-23T12:06:32+09:00
+:revremark: Add overview
 :description: README for {doctitle}
 :copyright: Copyright (C) 2022 {author}
 // Custom Attributes
 :creation_date: 2022-07-23T11:48:24+09:00
+:pre_commit_url: https://pre-commit.com
 
+:vale_url: https://vale.sh/
+link:{pre_commit_url}[pre-commit^] hooks for link:{vale_url}[Vale^]
+that is natural language texts linter.
 
+.Must Install Taplo
+[IMPORTANT]
+====
+You have to link:{vale_url}/docs/vale-cli/installation/[
+install Vale^] manually. +
+Because hook laguage is link:{pre_commit_url}#system[system^].
+It is not link:{pre_commit_url}#golang[golang^].
+====
 
 '''
 
